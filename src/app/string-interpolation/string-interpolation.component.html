@@ -1,0 +1,29 @@
+
+
+<mat-card class="mycard">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Dados pessoais</mat-card-title>
+     
+    </mat-card-header>
+    <mat-card-content>
+
+<p>Nome: {{person.firstname}}</p>
+<p>Sobrenome: {{person.lastname}}</p>
+<p>Endereço: {{person.address}}</p>
+<p>Idade: {{person.age}}</p>
+<form >
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Primeiro Nome</mat-label>
+      <input matInput placeholder="Nome" value="{{person.firstname}}">
+    </mat-form-field>
+  
+
+  </form>
+
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>

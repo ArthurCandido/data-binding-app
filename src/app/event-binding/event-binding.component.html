@@ -1,0 +1,63 @@
+
+
+<section>
+
+    <button mat-button color="warn" (click)="salvar()"> Salvar </button>
+    <button mat-button color="primary" (click)="inc()"> {{buttonName}} </button>
+
+
+
+</section>
+
+<mat-divider></mat-divider>
+
+
+<section>
+
+    <button mat-button color="warn" [disabled]="!btnEnable" > Compartilhar </button>
+    <button mat-button color="primary" [disabled]="!btnEnable"> Curtir </button>
+    <button mat-button color="primary" (click)="disable()" 
+    [disabled]="!btnEnable" > Desabilitar </button>
+
+    <mat-progress-spinner
+        color="primary"
+        mode= "indeterminate"
+        value="0">
+    </mat-progress-spinner>
+
+
+</section>
+
+<mat-divider></mat-divider>
+
+<section>
+
+<p>
+
+<mat-checkbox color="primary" (change)="cbChange($event)">Habilitar / Desabilitar</mat-checkbox>
+
+</p>
+
+
+
+</section>
+
+<mat-divider></mat-divider>
+
+<section>
+    <p>
+        <mat-card>
+        
+            <mat-card-content>
+                <mat-form-field >            
+                    <input matInput placeholder="Primeiro nome"
+                    (input) ="inputEvent($event)">
+                  </mat-form-field>
+            </mat-card-content>
+            <p>Oq vc digitou:  {{inputName}}</p>
+              
+            </mat-card>
+        </p>
+    
+</section>
+

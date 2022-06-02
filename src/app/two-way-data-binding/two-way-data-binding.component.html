@@ -1,0 +1,70 @@
+<section>
+    <mat-card style="margin: 20px;">
+        <mat-card-content>
+            <form>
+                <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Digite seu nome"
+                [(ngModel)]="name1" name="anyname1">
+                </mat-form-field>
+                <mat-form-field style="width: 100%;">
+                    <input matInput placeholder="Digite seu Sobrenome"
+                    [(ngModel)]="name2" name="anyname2">
+                    </mat-form-field>
+            </form>
+        </mat-card-content>
+        <mat-card-actions>
+           <p> Nome: {{name1}}</p>
+           <p> Sobrenome: {{name2}}</p>
+
+
+        </mat-card-actions>
+
+
+    </mat-card>
+
+</section>
+
+<section>
+
+    <mat-card style="margin: 20px;">
+    
+      <mat-card-title>
+       Cliente 
+      </mat-card-title>
+      <mat-card-content>
+        <form>
+            <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Seu nome" name="nome"
+                [(ngModel)]="client.Nome">
+            </mat-form-field>
+
+            <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Seu sobrenome" name="sobrenome"
+                [(ngModel)]="client.Sobrenome">
+            </mat-form-field>
+
+            <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Seu endereço " name="endereço"
+                [(ngModel)]="client.Endereco">
+            </mat-form-field>
+
+            <mat-form-field style="width: 100%;">
+                <input matInput placeholder="Sua idade" type="number" name="idade"
+                [(ngModel)]="client.Age">
+            </mat-form-field>
+        </form>
+      </mat-card-content>
+      <mat-card-actions>
+          <p>Nome: {{client.Nome}}</p>
+          <p>Sobrenome: {{client.Sobrenome}}</p>
+          <p>Endereço: {{client.Endereco}}</p>
+          <p>Idade: {{client.Age}}</p>
+          
+
+      </mat-card-actions>
+
+    </mat-card>
+
+</section>
+
+
